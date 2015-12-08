@@ -236,6 +236,72 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             return 'b'
 
                 
+ 
+ 
+    if player == 9:
+    
+    
+    
+    
+    
+    if player == 10
+    
+    
+    
+    
+    if player == 11
+    
+    
+    
+    if player == 12
+    
+    
+    
+    if player == 13
+    
+    
+    
+    
+    if player == 14
+    
+    
+    
+    
+    if player == 15
+    
+    
+    
+    if player == 16
+    
+    
+    
+    if player == 17
+    
+    
+    
+    if player == 18
+    
+    
+    
+    if player == 19
+    
+    
+    
+    if player == 20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     #STUDENTS ADD AN elif with your code next for adding a new agent
   
 
