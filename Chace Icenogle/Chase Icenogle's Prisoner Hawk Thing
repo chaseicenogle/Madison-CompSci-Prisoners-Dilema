@@ -86,7 +86,7 @@ def play_iterative_rounds(player1, player2):
     Returns 4-tuple, for example ('cc', 'bb', -200, 600)
     but with much longer strings
     '''
-    number_of_rounds = random.randint(9999,200000)
+    number_of_rounds = random.randint(999,2000)
     moves1 = ''
     moves2 = ''
     score1 = 0
@@ -244,53 +244,156 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     
     
     
-    if player == 10
+    if player == 10:
     
     
     
     
-    if player == 11
+    if player == 11:
     
     
     
-    if player == 12
+    if player == 12:
     
     
     
-    if player == 13
-    
-    
-    
-    
-    if player == 14
+    if player == 13:
     
     
     
     
-    if player == 15
+    if player == 14:
     
     
     
-    if player == 16
+    
+    if player == 15:
     
     
     
-    if player == 17
+    if player == 16:
     
     
     
-    if player == 18
+    if player == 17:
     
     
     
-    if player == 19
+    if player == 18:
     
     
     
-    if player == 20
+    if player == 19:
+    
+    
+    
+    if player == 20:
  
  
  
+    
+    if player == 21:
+    
+    
+    if player == 22:
+    
+    
+    
+    if player == 23:
+    
+    
+    
+    if player == 24:
+    
+    
+    
+    if player == 25:
+    
+    
+    
+    if player == 26:
+    
+    
+    if player == 26:
+    
+    
+    
+    if player == 27:
+    
+    
+    
+    if player == 28:
+    
+    
+    
+    if player == 29:
+    
+    
+    
+    if player == 30:
+    
+    
+    
+    if player == 31:
+    
+    
+    
+    if player == 32:
+    
+    
+    
+    if player == 33:
+    
+    
+    
+    if player == 34:
+    
+    
+    
+    if player == 35:
+    
+    
+    
+    if player == 36:
+    
+    
+    
+    if player == 37:
+    
+    
+    
+    if player == 38:
+    
+    
+    
+    if player == 39:
+    
+    
+    
+    if player == 40:
+    
+    
+    
+    if player == 41:
+    
+    
+    
+    if player == 42:
+    
+    
+    
+    
+    if player == 43:
+    
+    
+    
+    
+    if player == 44:
+    
+    
+    
+    
+    if player == 45:
  
  
  
