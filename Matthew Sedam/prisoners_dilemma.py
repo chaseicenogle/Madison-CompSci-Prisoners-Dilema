@@ -193,6 +193,16 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             return 'nice guy'
         else:
             return 'c'
+elif player == 6:
+        if getting_team_name:
+            return 'Ginger Keith'
+        else:
+            # use history, opponent_history, score, opponent_score
+            # to compute your strategy
+            if len(opponent_history)==0: #It's the first round: collude
+                return 'c'
+            elif history[-1]=='b' and opponent_history[-1]=='c':
+                return 'b' # betray is they were severely punished last time
 
 def play_tournament(num_players, whichGuy):
     #create a list of zeros, one per player
