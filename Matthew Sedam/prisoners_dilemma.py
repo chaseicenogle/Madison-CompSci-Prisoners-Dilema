@@ -79,7 +79,7 @@ def play_round(player1, player2, history1, history2, score1, score2):
     #send back the updated histories and scores
     return (new_history1, new_history2, new_score1, new_score2)
 
-def play_iterative_rounds(player1, player2):
+def play_iterative_rounds(player1, player2, rounds):
     '''
     Plays a random number of rounds (between 100 and 200 rounds)
     of the iterative prisoners' dilemma between two strategies.
@@ -87,7 +87,11 @@ def play_iterative_rounds(player1, player2):
     Returns 4-tuple, for example ('cc', 'bb', -200, 600)
     but with much longer strings
     '''
-    number_of_rounds = random.randint(100,200)
+    #number_of_rounds = random.randint(100,200)
+    if rounds <= 100:
+        number_of_rounds = random.randint(50, 500)
+    else:
+        number_of_rounds = rounds + random.randint(-100, 100)
     moves1 = ''
     moves2 = ''
     score1 = 0
@@ -117,9 +121,6 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         else:
             return 'b'
 
-
-    ######
-    ######
     #KimKarlNEY
     elif player == 1:
         if getting_team_name:
@@ -132,15 +133,6 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             except IndexError:
                 return 'c'
 
-
-
-
-
-
-
-
-    ######
-    ######
     #Team #BrownMoses Burning Bush
     #Max and Swagthony
     #AKA Team winners
@@ -205,7 +197,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             elif history[-1]=='b' and opponent_history[-1]=='c':
                 return 'b' # betray is they were severely punished last time
 
-def play_tournament(num_players, whichGuy):
+def play_tournament(num_players, whichGuy, rounds):
     #create a list of zeros, one per player
     scores = []
     for i in range(num_players):
@@ -233,7 +225,7 @@ def play_tournament(num_players, whichGuy):
         # play a game between with every other player of lower number
         for player2 in range(player1):
             moves1, moves2, score1, score2 = \
-                play_iterative_rounds(player1, player2)
+                play_iterative_rounds(player1, player2, rounds)
 
             rounds = len(moves1)
             score1_per_round = score1/rounds
