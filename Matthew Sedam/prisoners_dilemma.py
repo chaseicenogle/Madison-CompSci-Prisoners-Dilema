@@ -223,7 +223,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             elif history[-1]=='c' and opponent_history[-1]=='b':
                 return 'b'
             else:
-                return 'c' 
+                return 'c'
 
 def play_tournament(num_players, whichGuy, rounds):
     #create a list of zeros, one per player
