@@ -196,7 +196,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c'
             elif history[-1]=='b' and opponent_history[-1]=='c':
                 return 'b' # betray is they were severely punished last time
-    
+
     elif player == 7:
         if getting_team_name:
             return 'Holy Osama'
@@ -213,6 +213,17 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             return 'Bad Guy'
         else:
             return 'b'
+        
+    elif player == 9:
+        if getting_team_name:
+            return 'Elf'
+        else:
+            if len(opponent_history)==0:
+                return 'c'
+            elif history[-1]=='c' and opponent_history[-1]=='b':
+                return 'b'
+            else:
+                return 'c' 
 
 def play_tournament(num_players, whichGuy, rounds):
     #create a list of zeros, one per player
