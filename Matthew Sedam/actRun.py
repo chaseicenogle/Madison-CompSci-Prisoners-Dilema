@@ -14,7 +14,9 @@ def main():
     for a in scores:
         summ += a
     print("Average: " + str(summ / rounds) + "\nPoints: " + str(summ))'''
-    print("Points for " + str(rounds) + "rounds: " + str(prisoners_dilemma.play_tournament(6, 4, rounds)))
+    numberOfPlayers = int(raw_input("Number of Players: "))
+    statisticsOnWhom = int(raw_input("Who should statistics be reported on?: "))
+    print("Points for " + str(rounds) + "-ish rounds: " + str(prisoners_dilemma.play_tournament(numberOfPlayers, statisticsOnWhom, rounds)))
         
 if __name__ == '__main__':
     main()
