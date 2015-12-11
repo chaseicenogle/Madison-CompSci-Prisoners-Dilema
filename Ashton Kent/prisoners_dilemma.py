@@ -212,7 +212,39 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             else:
                 return 'c' 
 	   
-	   
+	   elif player == 6:
+        if getting_team_name:
+            return 'Mr. Koren'
+        else:
+            if len(opponent_history)==0: #collude because we are innocent
+                return 'b'
+            elif  opponent_history[-1]=='c': #if this person betrayed someone last time, we betray him.
+                return 'b' 
+            else:
+                return 'c' #if they were nice, we'll be nice
+                
+                
+                elif player == 7:
+        if getting_team_name:
+            return 'Ginger Keith'
+        else:
+            # use history, opponent_history, score, opponent_score
+            # to compute your strategy
+            if len(opponent_history)==0: #It's the first round: collude
+                return 'c'
+            elif history[-1]=='b' and opponent_history[-1]=='c':
+                return 'b' # betray is they were severely punished last time
+                
+                
+                 if player == 8:
+        if getting_team_name:
+            return 'Bad Cameron, bad.'
+        else:
+            return 'c'
+        if len(opponent_history)==0: #It's the first round: collude
+                return 'c'
+        elif history[-1]=='b' and opponent_history[-1]=='c':
+                return 'b'
 	   
 	   
 
