@@ -245,7 +245,16 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         	        return 'c'
         	elif history[-1]=='b' and opponent_history[-1]=='c':
         	        return 'b'
-	   
+        elif player == 6:
+		 if getting_team_name:
+        		 return 'Sea'
+        	 else:
+        	 if len(opponent_history)==0:
+                 	return 'c'
+             	elif opponent_history[-1]=='c'
+                	 return 'c'
+        	else:
+                	 return 'c'
 	   
 
 
