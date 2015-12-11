@@ -238,7 +238,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 
                  if player == 8:
         if getting_team_name:
-            return 'Big Booty Beddingham haha deez nutz @69'
+            return 'Bad Cameron, bad.'
         else:
             return 'c'
         if len(opponent_history)==0: #It's the first round: collude
