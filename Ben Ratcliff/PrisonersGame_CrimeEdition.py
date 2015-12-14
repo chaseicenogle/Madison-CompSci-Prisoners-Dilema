@@ -48,8 +48,8 @@ def play_round(player1, player2, history1, history2, score1, score2):
    
     RELEASE = 0 # (R) when both players collude
     TREAT = 500 # (T) when you betray your partner
-    SEVERE_PUNISHMENT = -200 # (S) when your partner betrays you
-    PUNISHMENT = -100 # (P) when both players betray each other
+    SEVERE_PUNISHMENT = -500 # (S) when your partner betrays you
+    PUNISHMENT = 0 # (P) when both players betray each other
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
     
