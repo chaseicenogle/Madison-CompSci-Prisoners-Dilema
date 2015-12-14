@@ -6,13 +6,9 @@ for the Iterative Prisoners Dilemma, the canonical game of game-theory.
 Each strategy plays 100 to 200 rounds against each other strategy.
 The results of all previous rounds within a 100-200 round stretch are known
 to both players.
-
 play_tournament() executes the tournament and stores output in tournament.txt
-
 Players should each code their strategies in their assigned section of code.
-
 Aggregated results are stored in tournament.txt
-
 Unpublished work (c)2013 Project Lead The Way
 CSE Project 1.3.5 Collaborating on a Project
 Draft, Do Not Distribute
@@ -226,13 +222,13 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c' 
 
 
-if player == 5:
+    elif player == 5:
         if getting_team_name:
             return 'Bubble Butt Billy Bob Buckaneer Baby Back Battleborn'
         else:
             return 'b'
             
-elif player == 6:
+    elif player == 6:
         if getting_team_name:
             return 'Ginger Keith'
         else:
@@ -243,7 +239,7 @@ elif player == 6:
             elif history[-1]=='w' and opponent_history[-1]=='w':
                 return 'w' # betray is they were severely punished last time
                 
-elif player == 7:
+    elif player == 7:
         if getting_team_name:
             return 'Mr. Koren'
         else:
@@ -253,8 +249,8 @@ elif player == 7:
                 return 'b' 
             else:
                 return 'c' #if they were nice, we'll be nice
-	
-	elif player == 8:
+    
+    elif player == 8:
         if getting_team_name:
             return 'playerrrrr'
         else:
@@ -462,10 +458,11 @@ def play_tournament(num_players):
                str(int((scores[player])/num_players-1)) , ' points: ',
                team_names[player])
 
+
 try:        
     play_tournament(players) # PLAYER NUMBER LOCATED AT TOP
 except:
     if(wraithEnabled == True):
-        play_tournament(6)
+        play_tournament(10)
     else:
-        play_tournament(5)
+        play_tournament(9)
