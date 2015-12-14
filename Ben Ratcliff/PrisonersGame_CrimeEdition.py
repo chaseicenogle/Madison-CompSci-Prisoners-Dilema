@@ -253,6 +253,19 @@ elif player == 7:
                 return 'b' 
             else:
                 return 'c' #if they were nice, we'll be nice
+	
+	elif player == 8:
+        if getting_team_name:
+            return 'playerrrrr'
+        else:
+            if len(opponent_history) == 0:
+                return 'b'
+            elif opponent_history[-1] == 'c' and random.choice([True, True, False]):
+                return 'b'
+            elif opponent_history[-1] == 'b' and random.choice([True, False]):
+                return 'c'
+            else:
+                return 'b'
 
 
 
