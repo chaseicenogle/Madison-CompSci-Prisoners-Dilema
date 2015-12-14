@@ -309,7 +309,7 @@ elif player == 7:
     ######
     ######
     #
-    elif wraithEnabled == True and player == 8:     #Hint: WRAITHS ALWATYS WIN!!! MUHAHAHAHAHA!
+    elif wraithEnabled == True and player == 9:     #Hint: WRAITHS ALWATYS WIN!!! MUHAHAHAHAHA!
         if getting_team_name:
             return 'Wraith'
         else:
