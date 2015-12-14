@@ -32,10 +32,10 @@ def play_round(player1, player2, history1, history2, score1, score2):
     (history1, history2, score1, score2)
     '''
    
-    RELEASE = 1000 # (R) when both players collude
-    TREAT = 500# (T) when you betray your partner
-    SEVERE_PUNISHMENT = -500# (S) when your partner betrays you
-    PUNISHMENT = -10 # (P) when both players betray each other
+    RELEASE =  5# (R) when both players collude
+    TREAT = # 10(T) when you betray your partner
+    SEVERE_PUNISHMENT = -10# (S) when your partner betrays you
+    PUNISHMENT =  -5# (P) when both players betray each other
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
     
@@ -386,8 +386,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 #########################################################################################################################################
 ######### PUT YOUR AGENTS UNDER HERE:####################################################################################################
 #########################################################################################################################################
-    
-    
+######### These are the agents made by others. ##########################################################################################
+#########################################################################################################################################
     
     
     
