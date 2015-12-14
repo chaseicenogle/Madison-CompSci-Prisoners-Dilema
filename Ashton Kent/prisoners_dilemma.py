@@ -269,6 +269,15 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c'
             else:
                 return 'b'
+                
+        elif player == 10:
+        if getting_team_name: # This one colludes for a while and then snaps and goes betray
+            return 'McGingerSnap'
+        else:
+            if len(opponent_history)>30:
+                return 'b'
+            else:
+                return 'c'
 	   
 
 
