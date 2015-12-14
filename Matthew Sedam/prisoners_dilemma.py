@@ -224,7 +224,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b'
             else:
                 return 'c'
-	elif player == 10:
+
+    elif player == 10:
         if getting_team_name:
             return 'Mr. Koren'
         else:
@@ -234,7 +235,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b' 
             else:
                 return 'c' #if they were nice, we'll be nice
-	elif player == 11:
+
+    elif player == 11:
         if getting_team_name:
             return 'Another Mr. Koren'
         else:
@@ -382,4 +384,13 @@ def play_tournament(num_players, whichGuy, rounds):
                str(int((scores[player])/num_players-1)) , ' points: ',
                team_names[player])'''
     
+    winner = 0
+    best = int(scores[0])
+    for i in range(num_players):
+        if int(scores[i]) > int(scores[winner]):
+            winner = i
+            best = int(scores[i])
+    
+    print("Winner is: " + str(winner) + " with a score of: " + str(best))
+
     return int(scores[whichGuy])
