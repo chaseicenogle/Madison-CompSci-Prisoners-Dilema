@@ -72,8 +72,8 @@ def play_round(player1, player2, history1, history2, score1, score2):
     else:
     #Both players' code provided proper actions
         if action1 == 'w' and action2 == 'w':
-            new_score1 = score1 + score2
-            new_score2 = score2 + score1
+            new_score1 = score1 + score2 + TREAT
+            new_score2 = score2 + score1 + TREAT
         elif action1 == 'w':
             new_score1 = score1 + score2
             if score1 == 0 or -1:
