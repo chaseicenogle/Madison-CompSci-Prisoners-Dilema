@@ -198,21 +198,18 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 	   history[0]="c"
 	   
 	   
+    elif player == 5:
+	if getting_team_name:
+            return 'Elf'
+        else:
+            if len(opponent_history)==0:
+                return 'c'
+            elif history[-1]=='c' and opponent_history[-1]=='b':
+                return 'b'
+            else:
+                return 'c' 
 	   
-	   
-	   
-	elif player == 5:
-		if getting_team_name:
-        		return 'Elf'
-        	else:
-        		if len(opponent_history)==0:
-        		        return 'c'
-        	elif history[-1]=='c' and opponent_history[-1]=='b':
-        	        return 'b'
-        	else:
-                	return 'c' 
-	   
-	   elif player == 6:
+    elif player == 6:
         if getting_team_name:
             return 'Mr. Koren'
         else:
@@ -224,7 +221,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c' #if they were nice, we'll be nice
                 
                 
-        elif player == 7:
+    elif player == 7:
         if getting_team_name:
             return 'Ginger Keith'
         else:
@@ -236,28 +233,28 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b' # betray is they were severely punished last time
                 
                 
-        elif player == 8:
-        	if getting_team_name:
-        		return 'Bad Cameron, bad.'
-        	else:
-        		return 'c'
-        	if len(opponent_history)==0: #It's the first round: collude
-        	        return 'c'
-        	elif history[-1]=='b' and opponent_history[-1]=='c':
-        	        return 'b'
+    elif player == 8:
+        if getting_team_name:
+            return 'Bad Cameron, bad.'
+        else:
+            return 'c'
+        if len(opponent_history)==0: #It's the first round: collude
+            return 'c'
+        elif history[-1]=='b' and opponent_history[-1]=='c':
+            return 'b'
 		
-        elif player == 9:
-		 if getting_team_name:
-        		 return 'Sea'
-        	 else:
-        	 if len(opponent_history)==0:
-                 	return 'c'
-             	elif opponent_history[-1]=='c'
-                	 return 'c'
-        	else:
-                	 return 'c'
+    elif player == 9:
+        if getting_team_name:
+            return 'Sea'
+        else:
+            if len(opponent_history)==0:
+                 return 'c'
+            elif opponent_history[-1]=='c':
+                return 'c'
+            else:
+                return 'c'
 	
-	elif player == 10:
+    elif player == 10:
         if getting_team_name:
             return 'playerrrrr'
         else:
@@ -270,7 +267,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             else:
                 return 'b'
                 
-        elif player == 10:
+    elif player == 11:
         if getting_team_name: # This one colludes for a while and then snaps and goes betray
             return 'McGingerSnap'
         else:
@@ -420,4 +417,4 @@ def play_tournament(num_players):
                team_names[player])
 			   
 			   
-play_tournament(5)
+play_tournament(12)
