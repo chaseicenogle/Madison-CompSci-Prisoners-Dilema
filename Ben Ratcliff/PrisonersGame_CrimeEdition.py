@@ -77,7 +77,7 @@ def play_round(player1, player2, history1, history2, score1, score2):
         elif action1 == 'w':
             new_score1 = score1 + score2
             if score1 == 0 or -1:
-                new_score1 = score1 + TREAT
+                new_score1 = score1 + TREAT * 2
                 new_score2 = score2 - TREAT
             else:
                 new_score2 = 0
@@ -85,7 +85,7 @@ def play_round(player1, player2, history1, history2, score1, score2):
         elif action2 == 'w':
             new_score2 = score2 + score1
             if score2 == 0 or -1:
-                new_score2 = score1 + TREAT
+                new_score2 = score1 + TREAT * 2
                 new_score1 = score2 - TREAT
             else:
                 new_score1 = 0
