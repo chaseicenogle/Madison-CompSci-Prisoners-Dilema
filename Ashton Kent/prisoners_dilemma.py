@@ -284,9 +284,9 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 	        else:
 	            return 'b'
 	            
-	elif player == 12:
-	    if getting_team_name:
-	        return 'Gabe McMahon'
+    elif player == 12:
+    	if getting_team_name:
+    		return 'Gabe McMahon'
 	    else:
 	        return 'c'
 	        
