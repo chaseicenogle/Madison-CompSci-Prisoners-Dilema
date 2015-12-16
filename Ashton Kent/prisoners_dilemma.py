@@ -275,7 +275,26 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b'
             else:
                 return 'c'
-	   
+	elif player == 11:
+	    if getting_team_name:
+	        return 'MLG'
+	    else:
+	        if random.randint(2) < 2:
+	            return 'c'
+	        else:
+	            return 'b'
+	            
+	elif player == 12:
+	    if getting_team_name:
+	        return 'Gabe McMahon'
+	    else:
+	        return 'c'
+	        
+	elif player == 13:
+	    if getting_team_name:
+	        return 'yah mum'
+	    else:
+	        return 'c'
 
 
 def play_tournament(num_players):
