@@ -246,9 +246,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b' 
             else:
                 return 'c' #if they were nice, we'll be nice
-<<<<<<< HEAD
-	
-=======
+
     elif player == 12:
         if getting_team_name
              return 'Sea'
@@ -259,7 +257,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                  return 'c'
              else:
                  return 'c'
->>>>>>> 40b7f76bc9800ad3d325556c9064058df875bcce
+
 def play_tournament(num_players, whichGuy, rounds):
     #create a list of zeros, one per player
     scores = []
