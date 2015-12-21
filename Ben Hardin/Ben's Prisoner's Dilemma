@@ -400,7 +400,25 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             elif history[-1]=='c' and opponent_history[-1]=='b':
                 return 'b'
             else:
+<<<<<<< HEAD
                 return 'c' 
+=======
+                return 'c'
+
+
+    elif player == 35:
+        if getting_team_name
+             return 'Sea'
+         else:
+             if len(opponent_history)==0:
+                 return 'c'
+             elif opponent_history[-1]=='c'
+                 return 'c'
+             else:
+                 return 'c'
+
+
+>>>>>>> 9a13fbc3ad468d2a48469af49166456248280810
 
     elif player == 36:
         if getting_team_name:
